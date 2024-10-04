@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "luffy_backend": {
+      "main": "src/luffy_backend/main.mo",
+      "type": "motoko"
+    },
+    "luffy_frontend": {
+      "dependencies": [
+        "luffy_backend"
+      ],
+      "source": [
+        "src/luffy_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "luffy_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
